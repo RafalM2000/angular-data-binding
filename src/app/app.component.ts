@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-data-binding';
+  name: string = 'Rafał';
+  age = 28;
+  friendNumber = 0;
+  type = 'sport';
+  hobbies = {czas: 'wolny', sport: 'pływanie'};
+  friends = ['Mateusz', 'Wojtek', 'Paweł', 'Tomasz'];
+  collegues = ['Wojtek', 'Maciej'];
+  isHeLikesBooks = true;
+  data = new Date();
+
+  add() {
+    ++this.friendNumber;
+    console.log(this.friendNumber);
+  }
+
+  minus() {
+    --this.friendNumber;
+    console.log(this.friendNumber);
+  }
 }
